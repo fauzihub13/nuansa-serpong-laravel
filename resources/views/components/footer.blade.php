@@ -7,7 +7,7 @@
                     <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo">
-                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                        {{-- <a href="index.html"><h4>Nuansa Serpong</h4></a> --}}
                         </div>
                         <div class="footer-social footer-social2">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -57,7 +57,7 @@
                                 <li><a href="#">Suite 721 New York NY 10016</a></li>
                             </ul>
                             <!-- Form -->
-                            
+
                         </div>
                     </div>
                 </div>

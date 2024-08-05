@@ -15,7 +15,7 @@
         <meta property="og:url" content="https://www.nuansaserpong.com/">
         <meta property="og:site_name" content="Nuansa Serpong">
 
-		<link rel="shortcut icon" type="image/x-icon" href="{{ asset ('assets/img/favicon.ico') }}">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ asset ('assets/img/ns/icon-x.jpg') }}">
 
         @stack('style')
 

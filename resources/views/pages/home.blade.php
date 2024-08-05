@@ -14,37 +14,37 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active dot-style">
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/hero/h1_hero.jpg') }}" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/ns/hero-1.jpg') }}" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
                                 <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">NUANSA SERPONG</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Nuansa Serpong Hotel Terbaik di Gading Serpong Tangerang</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/hero/h1_hero.jpg') }}" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/ns/hero-1.jpg') }}" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
                                 <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top2 hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">NUANSA SERPONG</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Jaminan Harga Terbaik</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/hero/h1_hero.jpg') }}" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{{ asset('assets/img/ns/hero-1.jpg') }}" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
                                 <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top3 hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">NUANSA SERPONG</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Fasilitas Lengkap, Aman dan Nyaman</h3>
                                 </div>
                             </div>
                         </div>
@@ -60,21 +60,20 @@
                 <div class="row">
                    <div class="col-xl-5 col-lg-6">
                         <div class="customer-img mb-120">
-                            <img src="{{ asset('assets/img/customer/customar1.png') }}" class="customar-img1" alt="">
+                            <img src="{{ asset('assets/img/ns/building.png') }}" class="customar-img1" alt="">
                             <img src="{{ asset('assets/img/customer/customar2.png') }}" class="customar-img2" alt="">
                             <div class="service-experience heartbeat">
-                                <h3>25 Years of Service<br>Experience</h3>
+                                <h3>Harga Terbaik</h3>
                             </div>
                         </div>
                    </div>
                     <div class=" col-xl-4 col-lg-4">
                         <div class="customer-caption">
-                            <span>About our company</span>
-                            <h2>Make the customer the hero of your story</h2>
+                            <span>Tentang Nuansa Serpong</span>
+                            <h2>Hotel Mewah dan Eksklusif</h2>
                             <div class="caption-details">
-                                <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed do eiusmod tempor inc. </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
-                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                                <p>Dengan lokasi yang strategis di pusat kota dan pemandangan yang indah dari kamar-kamar kami, hotel kami adalah pilihan sempurna bagi mereka yang mencari akomodasi berkualitas tinggi dengan fasilitas yang lengkap.</p>
+                                <a href="#" class="btn more-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -97,17 +96,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
+
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"><img src="{{ asset ('assets/img/rooms/room1.jpg') }}" alt=""></a>
+                               <a href="#"><img src="{{ asset('assets/img/ns/room/room-industrial-1.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="#">Room Skandinavian</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                    <span><u>Rp,</u>363.000 <span>/ per night</span></span>
+                                    <hr>
+                                    <ul>
+                                        <li><p>- Luas 29m²</p></li>
+                                        <li><p>- Pool view​</p></li>
+                                        <li><p>- Non-smoking</p></li>
+                                        <li><p>- Swimming Pool​</p></li>
+                                        <li><p>- Air conditioned​</p></li>
+                                        <li><p>- Mini Fridge​​</p></li>
+                                        <li><p>- dan lainnya.</p></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -116,76 +126,32 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"><img src="{{ asset('assets/img/rooms/room2.jpg') }}" alt=""></a>
+                               <a href="#"> <img src="{{ asset('assets/img/ns/room/room-skandinavian-1.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="#">Room Industrial​</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                    <span><u>Rp,</u>363.000 <span>/ per night</span></span>
+                                    <hr>
+                                    <ul>
+                                        <li><p>- Luas 29m²</p></li>
+                                        <li><p>- Pool view​</p></li>
+                                        <li><p>- Non-smoking</p></li>
+                                        <li><p>- Swimming Pool​</p></li>
+                                        <li><p>- Air conditioned​</p></li>
+                                        <li><p>- Mini Fridge​​</p></li>
+                                        <li><p>- dan lainnya.</p></li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="#"> <img src="{{ asset('assets/img/rooms/room3.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                                <a href="#"><img src="{{ asset('assets/img/rooms/room4.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                                <a href="#"><img src="{{ asset('assets/img/rooms/room5.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="#"> <img src="{{ asset('assets/img/rooms/room6.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="row justify-content-center">
                     <div class="room-btn pt-70">
-                        <a href="#" class="btn view-btn1">View more  <i class="ti-angle-right"></i> </a>
+                        <a href="#" class="btn view-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
                     </div>
                 </div>
             </div>

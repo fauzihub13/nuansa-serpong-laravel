@@ -7,7 +7,7 @@
                     <!-- logo -->
                     <div class="col-xl-2 col-lg-2">
                         <div class="logo">
-                            <a href="{{ route('general.home') }}"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="{{ route('general.home') }}"><img src="assets/img/ns/icon-x.jpg" alt="" width="50" height="50"></a>
                         </div>
                     </div>
                 <div class="col-xl-8 col-lg-8">
