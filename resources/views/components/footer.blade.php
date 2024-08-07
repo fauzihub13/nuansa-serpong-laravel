@@ -17,7 +17,9 @@
                         </div>
                         <div class="footer-pera">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy; 2024</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Copyright &copy; 2024</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank" style="text-color: #16161a; text-decoration: none; text-decoration-thickness: none;
+    text-decoration-style: none;
+    text-decoration-color: #16161a">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                         </div>
@@ -28,10 +30,10 @@
                         <div class="footer-tittle">
                             <h4>Quick Links</h4>
                             <ul>
-                                <li><a href="#">About Mariana</a></li>
-                                <li><a href="#">Our Best Rooms</a></li>
+                                <li><a href="{{ route('general.about') }}">About Nuansa Serpong</a></li>
+                                <li><a href="{{ route('general.page_rooms') }}">Our Rooms</a></li>
                                 <li><a href="#">Our Photo Gellary</a></li>
-                                <li><a href="#">Pool Service</a></li>
+                                <li><a href="{{ route('general.service') }}">Pool Service</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,7 +43,7 @@
                         <div class="footer-tittle">
                             <h4>Reservations</h4>
                             <ul>
-                                <li><a href="#">Tel: 345 5667 889</a></li>
+                                <li><a href="#">Tel: 0812-2000-9330</a></li>
                                 <li><a href="#">Skype: Marianabooking</a></li>
                                 <li><a href="#">reservations@hotelriver.com</a></li>
                             </ul>
@@ -53,8 +55,8 @@
                         <div class="footer-tittle">
                             <h4>Our Location</h4>
                             <ul>
-                                <li><a href="#">198 West 21th Street,</a></li>
-                                <li><a href="#">Suite 721 New York NY 10016</a></li>
+                                <li><a href="#">Jl. Raya Legok - Karawaci No.89, Curug Sangereng,</a></li>
+                                <li><a href="#">Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810</a></li>
                             </ul>
                             <!-- Form -->
 
