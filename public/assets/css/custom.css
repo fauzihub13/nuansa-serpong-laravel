@@ -1,0 +1,19 @@
+.iframe-rwd {
+    position: relative;
+    /* padding-bottom: 56.25%; */
+    height: 300px !important;
+    overflow: hidden;
+    width: 100%;
+}
+
+.iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a .active {
+    color: #dca73a !important;
+}

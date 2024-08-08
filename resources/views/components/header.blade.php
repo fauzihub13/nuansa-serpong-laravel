@@ -7,7 +7,7 @@
                     <!-- logo -->
                     <div class="col-xl-2 col-lg-2">
                         <div class="logo">
-                            <a href="{{ route('general.home') }}"><img src="assets/img/ns/icon-x.jpg" alt="" width="50" height="50"></a>
+                            <a href="{{ route('general.home') }}"><img src="{{ asset('assets/img/ns/icon-x.jpg') }}" alt="" width="50" height="50"></a>
                         </div>
                     </div>
                 <div class="col-xl-8 col-lg-8">
@@ -15,22 +15,22 @@
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="{{ route('general.home') }}">Home</a></li>
-                                    <li><a href="{{ route('general.about') }}">About</a></li>
-                                    <li><a href="{{ route('general.service') }}">Service</a></li>
-                                    <li><a href="#">Blog</a>
+                                    <li><a href="{{ route('general.home') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
+                                    <li><a href="{{ route('general.service') }}" class="{{ Request::is('service') ? 'active' : '' }}" >Service</a></li>
+                                    <li><a href="{{ route('general.about') }}" class="{{ Request::is('about') ? 'active' : '' }}">About</a></li>
+                                    <li><a href="{{ route('general.blog') }}" class="{{ Request::is('blog*') ? 'active' : '' }}">Blog</a>
                                         <ul class="submenu">
-                                            <li><a href="{{ route('general.blog') }}">Blog</a></li>
-                                            <li><a href="{{ route('general.blog_detail') }}">Blog Details</a></li>
+                                            <li><a href="{{ route('general.blog') }}" class="{{ Request::is('blog') ? 'active' : '' }}">Blog</a></li>
+                                            <li><a href="{{ route('general.blog_detail') }}" class="{{ Request::is('blog/detail') ? 'active' : '' }}">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href=""  class="{{ Request::is('page*') ? 'active' : '' }}">Pages</a>
                                         <ul class="submenu">
-                                            <li><a href="{{ route('general.page_rooms') }}">Rooms</a>
-                                            <li><a href="{{ route('general.page_element') }}">Element</a></li>
+                                            <li><a href="{{ route('general.page_rooms') }}" class="{{ Request::is('page/room') ? 'active' : '' }}">Rooms</a>
+                                            <li><a href="{{ route('general.page_element') }}" class="{{ Request::is('page/element') ? 'active' : '' }}">Element</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{ route('general.contact') }}">Contact</a></li>
+                                    <li><a href="{{ route('general.contact') }}"  class="{{ Request::is('contact*') ? 'active' : '' }}">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>

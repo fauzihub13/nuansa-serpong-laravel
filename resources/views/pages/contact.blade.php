@@ -5,6 +5,7 @@
 @push('style')
     <!-- CSS Libraries -->
 
+
 @endpush
 
 @section('main')
@@ -30,7 +31,12 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
                 <div class="container">
-                    
+                    <div class="row mb-4 pb-4 mx-4">
+                        {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4716.539596624813!2d106.6057744931727!3d-6.247750616310943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fde6116dee11%3A0xe9797638793c9de2!2sNuansa%20Serpong!5e0!3m2!1sen!2sid!4v1723144839580!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+                    <div class="iframe-rwd">
+                        <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4716.539596624813!2d106.6057744931727!3d-6.247750616310943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fde6116dee11%3A0xe9797638793c9de2!2sNuansa%20Serpong!5e0!3m2!1sen!2sid!4v1723144839580!5m2!1sen!2sid"></iframe><br /><small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4716.539596624813!2d106.6057744931727!3d-6.247750616310943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fde6116dee11%3A0xe9797638793c9de2!2sNuansa%20Serpong!5e0!3m2!1sen!2sid!4v1723144839580!5m2!1sen!2sid">View Larger Map</a></small>
+                    </div>
+                    </div>
                     <div class="row">
                         <div class="col-12">
                             <h2 class="contact-title">Get in Touch</h2>
@@ -68,21 +74,21 @@
                             <div class="media contact-info">
                                 <span class="contact-info__icon"><i class="ti-home"></i></span>
                                 <div class="media-body">
-                                    <h3>Buttonwood, California.</h3>
-                                    <p>Rosemead, CA 91770</p>
+                                    <h3>Jl. Raya Legok – Karawaci No.89</h3>
+                                    <p>Tangerang, Banten 15810</p>
                                 </div>
                             </div>
                             <div class="media contact-info">
                                 <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                                 <div class="media-body">
-                                    <h3>+1 253 565 2365</h3>
+                                    <h3>+62 812 2000 9330</h3>
                                     <p>Mon to Fri 9am to 6pm</p>
                                 </div>
                             </div>
                             <div class="media contact-info">
                                 <span class="contact-info__icon"><i class="ti-email"></i></span>
                                 <div class="media-body">
-                                    <h3>support@colorlib.com</h3>
+                                    <h3>nuansaserpong@gmail.com</h3>
                                     <p>Send us your query anytime!</p>
                                 </div>
                             </div>

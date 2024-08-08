@@ -43,7 +43,7 @@
                         <div class="footer-tittle">
                             <h4>Reservations</h4>
                             <ul>
-                                <li><a href="#">Tel: 0812-2000-9330</a></li>
+                                <li><a href="#">Tel: +62 812 2000 9330</a></li>
                                 <li><a href="#">Instagram: Nuansaserpong</a></li>
                                 <li><a href="#">nuansaserpong@gmail.com</a></li>
                             </ul>
@@ -55,8 +55,8 @@
                         <div class="footer-tittle">
                             <h4>Our Location</h4>
                             <ul>
-                                <li><a href="#">Jl. Raya Legok - Karawaci No.89, Curug Sangereng,</a></li>
-                                <li><a href="#">Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810</a></li>
+                                <li><a href="#">Jl. Raya Legok - Karawaci No.89, Curug Sangereng, Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810</a></li>
+                                <li><a href="#"></a></li>
                             </ul>
                             <!-- Form -->
 
