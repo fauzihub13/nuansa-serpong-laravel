@@ -32,8 +32,8 @@
                             <ul>
                                 <li><a href="{{ route('general.about') }}">About Nuansa Serpong</a></li>
                                 <li><a href="{{ route('general.page_rooms') }}">Our Rooms</a></li>
-                                <li><a href="#">Our Photo Gellary</a></li>
-                                <li><a href="{{ route('general.service') }}">Pool Service</a></li>
+                                <li><a href="#">Our Photo Gallery</a></li>
+                                <li><a href="{{ route('general.service') }}">Our Service</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,8 +44,8 @@
                             <h4>Reservations</h4>
                             <ul>
                                 <li><a href="#">Tel: 0812-2000-9330</a></li>
-                                <li><a href="#">Skype: Marianabooking</a></li>
-                                <li><a href="#">reservations@hotelriver.com</a></li>
+                                <li><a href="#">Instagram: Nuansaserpong</a></li>
+                                <li><a href="#">nuansaserpong@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
