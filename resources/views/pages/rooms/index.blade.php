@@ -46,10 +46,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"><img src="{{ asset('assets/img/rooms/room1.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room1.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -60,10 +60,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"><img src="{{ asset('assets/img/rooms/room2.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room2.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -74,10 +74,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"> <img src="{{ asset('assets/img/rooms/room3.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/rooms/room3.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -88,10 +88,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                                <a href="#"><img src="{{ asset('assets/img/rooms/room4.jpg') }}" alt=""></a>
+                                <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room4.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -102,10 +102,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                                <a href="#"><img src="{{ asset('assets/img/rooms/room5.jpg') }}" alt=""></a>
+                                <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room5.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -116,10 +116,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"> <img src="{{ asset('assets/img/rooms/room6.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/rooms/room6.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Classic Double Bed</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -127,37 +127,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="room-btn pt-70">
-                        <a href="#" class="btn view-btn1">View more  <i class="ti-angle-right"></i> </a>
-                    </div>
-                </div>
+
             </div>
 
         </section>
         <!-- Room End -->
 
-        <!-- Gallery img Start-->
-        <div class="gallery-area fix">
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery-active owl-carousel">
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery3.jpg') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery img End-->
     </main>
 
 @endsection

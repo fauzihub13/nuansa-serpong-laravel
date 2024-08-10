@@ -28,8 +28,12 @@ class GeneralController extends Controller
         return view('pages.blog.detail');
     }
 
-    public function page_rooms() {
-        return view('pages.page.rooms');
+    public function rooms() {
+        return view('pages.rooms.index');
+    }
+
+    public function detail_rooms() {
+        return view('pages.rooms.detail');
     }
 
     public function page_element() {

@@ -31,7 +31,7 @@
                             <h4>Quick Links</h4>
                             <ul>
                                 <li><a href="{{ route('general.about') }}">About Nuansa Serpong</a></li>
-                                <li><a href="{{ route('general.page_rooms') }}">Our Rooms</a></li>
+                                <li><a href="{{ route('general.rooms') }}">Our Rooms</a></li>
                                 <li><a href="#">Our Photo Gallery</a></li>
                                 <li><a href="{{ route('general.service') }}">Our Service</a></li>
                             </ul>

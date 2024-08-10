@@ -73,7 +73,7 @@
                             <h2>Hotel Mewah dan Eksklusif</h2>
                             <div class="caption-details text-justify">
                                 <p>Dengan lokasi yang strategis di pusat kota dan pemandangan yang indah dari kamar-kamar kami, hotel kami adalah pilihan sempurna bagi mereka yang mencari akomodasi berkualitas tinggi dengan fasilitas yang lengkap.</p>
-                                <a href="#" class="btn more-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
+                                <a href="{{ route('general.about') }}" class="btn more-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -102,10 +102,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"><img src="{{ asset('assets/img/ns/room/room-industrial-1.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/ns/room/room-industrial-1.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Room Skandinavian</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Room Skandinavian</a></h3>
                                 <div class="per-night">
                                     <span><u>Rp,</u>363.000 <span>/ per night</span></span>
                                     <hr>
@@ -126,10 +126,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="#"> <img src="{{ asset('assets/img/ns/room/room-skandinavian-1.jpg') }}" alt=""></a>
+                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/ns/room/room-skandinavian-1.jpg') }}" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="#">Room Industrial​</a></h3>
+                                <h3><a href="{{ route('general.detail_room') }}">Room Industrial​</a></h3>
                                 <div class="per-night">
                                     <span><u>Rp,</u>363.000 <span>/ per night</span></span>
                                     <hr>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="room-btn pt-70">
-                        <a href="#" class="btn view-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
+                        <a href="{{route('general.rooms')}}" class="btn view-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
                     </div>
                 </div>
             </div>
@@ -170,7 +170,6 @@
                                 <span>Our resturent</span>
                                 <h3>Dining & Drinks</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +184,6 @@
                                 <span>Our Pool</span>
                                 <h3>Swimming Pool</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -282,7 +280,6 @@
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
                                     <span>news</span>
-                                    <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
                                     <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
@@ -290,7 +287,6 @@
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
                                     <span>Feb 28, 2020</span>
-                                    <span><img src="{{ asset('assets/img/our_blog/blog-comments-icon.jpg') }}" alt="">3</span>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +300,6 @@
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
                                     <span>news</span>
-                                    <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
                                     <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
@@ -312,7 +307,6 @@
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
                                     <span>Feb 28, 2020</span>
-                                    <span><img src="{{ asset('assets/img/our_blog/blog-comments-icon.jpg') }}" alt="">3</span>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +320,6 @@
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
                                     <span>news</span>
-                                    <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
                                     <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
@@ -334,7 +327,6 @@
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
                                     <span>Feb 28, 2020</span>
-                                    <span><img src="{{ asset('assets/img/our_blog/blog-comments-icon.jpg') }}" alt="">3</span>
                                 </div>
                             </div>
                         </div>

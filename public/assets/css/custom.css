@@ -30,6 +30,16 @@
     padding: 33px 20px 0px 30px !important;
 }
 
+.text-primary-yellow {
+    color: #dca73a !important;
+
+}
+
+.detail-room li {
+    /* float: left; */
+    font-size: 14px;
+}
+
 @media (max-width: 767px) {
     .font-display-2 {
         font-size: 16px !important;

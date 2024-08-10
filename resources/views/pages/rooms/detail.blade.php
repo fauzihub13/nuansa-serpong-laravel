@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Detail Blog')
+@section('title', 'Detail Room')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -16,8 +16,8 @@
                 <div class="row ">
                     <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
                         <div class="hero-caption">
-                            <span>Blog</span>
-                            <h2>Single Blog</h2>
+                            <span>Room</span>
+                            <h2>Detail Room</h2>
                         </div>
                     </div>
                 </div>
@@ -34,38 +34,69 @@
 
                     <div class="single-post">
                         <div class="feature-img">
-                            <img class="img-fluid" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="Fourth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="Fifth slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="blog_details">
-                            <h2>Second divided from form fish beast made every of seas
-                                all gathered us saying he our
+                            <h2>Room Industrial
                             </h2>
-                            <ul class="blog-info-link mt-3 mb-4">
-                                <li><a href="#"><i class="fa fa-user"></i> Nuansa Serpong</a></li>
+
+                            <ul class="blog-info-link mt-3 mb-4 pr-3 text-right">
+                                <h4>Rp. 353.000</h4>
                             </ul>
-                            <p class="excert text-justify">
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                                should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                                fraction of the camp price. However, who has the willpower
-                            </p>
-                            <p class="excert text-justify">
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                                should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                                fraction of the camp price. However, who has the willpower to actually sit through a
-                                self-imposed MCSE training. who has the willpower to actually
-                            </p>
 
                             <p class="excert text-justify">
                                 MCSE boot camps have its supporters and its detractors. Some people do not understand why you
                                 should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                                fraction of the camp price. However, who has the willpower
-                            </p>
-                            <p class="excert text-justify">
+                                fraction of the camp price. However, who has the willpower. <br> <br>
                                 MCSE boot camps have its supporters and its detractors. Some people do not understand why you
                                 should have to spend money on boot camp when you can get the MCSE study materials yourself at a
                                 fraction of the camp price. However, who has the willpower to actually sit through a
-                                self-imposed MCSE training. who has the willpower to actually
+                                self-imposed MCSE training. who has the willpower to actually.
                             </p>
+
+                            <ul class="detail-room">
+                                <li><a href="#"><i class="fa fa-user mb-2"></i> Nuansa Serpong</a></li>
+                                <li><a href="#"><i class="fa fa-user mb-2"></i> Nuansa Serpong</a></li>
+                                <li><a href="#"><i class="fa fa-user mb-2"></i> Nuansa Serpong</a></li>
+                                <li><a href="#"><i class="fa fa-user mb-2"></i> Nuansa Serpong</a></li>
+                                <li><a href="#"><i class="fa fa-user mb-2"></i> Nuansa Serpong</a></li>
+                            </ul>
+
+
+
                         </div>
                     </div>
 
