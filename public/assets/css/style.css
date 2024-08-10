@@ -3236,7 +3236,7 @@ label {
 }
 
 .single-room .room-caption {
-    padding: 33px 20px 0px 30px;
+    padding: 33px 20px 33px 30px;
     box-shadow: 1.395px 19.951px 38px 0px rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
     border-radius: 0 0 5px 5px;
@@ -3246,7 +3246,7 @@ label {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    height: 150px;
+    /* height: 100%; */
 }
 
 .single-room .room-caption:hover h3 a {

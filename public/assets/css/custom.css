@@ -25,6 +25,11 @@
     color: grey !important;
 }
 
+.about-caption {
+    height: 150px !important;
+    padding: 33px 20px 0px 30px !important;
+}
+
 @media (max-width: 767px) {
     .font-display-2 {
         font-size: 16px !important;
