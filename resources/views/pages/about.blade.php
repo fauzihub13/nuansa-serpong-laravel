@@ -73,10 +73,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Fivi.jpg') }}" alt=""></a>
+                              <img src="{{ asset('assets/img/ns/teams/Fivi.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Fivi</a></h3>
+                                <h3 class="text-center font-display-1">Fivi</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">General Manager</span>
                                 </div>
@@ -87,10 +87,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Paula.jpg') }}" alt=""></a>
+                               <img src="{{ asset('assets/img/ns/teams/Paula.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Paula</a></h3>
+                                <h3 class="text-center font-display-1">Paula</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">General Affair</span>
                                 </div>
@@ -101,10 +101,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Veve.jpg') }}" alt=""></a>
+                               <img src="{{ asset('assets/img/ns/teams/Veve.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Veve</a></h3>
+                                <h3 class="text-center font-display-1">Veve</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">Finance Controller</span>
                                 </div>
@@ -115,10 +115,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Erwin.jpg') }}" alt=""></a>
+                               <img src="{{ asset('assets/img/ns/teams/Erwin.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Erwin</a></h3>
+                                <h3 class="text-center font-display-1">Erwin</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">Marketing Affairs</span>
                                 </div>
@@ -129,10 +129,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Mayang.jpg') }}" alt=""></a>
+                               <img src="{{ asset('assets/img/ns/teams/Mayang.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Mayang</a></h3>
+                                <h3 class="text-center font-display-1">Mayang</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">Hotel Supervisor</span>
                                 </div>
@@ -143,10 +143,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img rounded">
-                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Helmi.jpg') }}" alt=""></a>
+                               <img src="{{ asset('assets/img/ns/teams/Helmi.jpg') }}" alt="">
                             </div>
                             <div class="room-caption about-caption">
-                                <h3 class="text-center font-display-1"><a href="#">Helmi</a></h3>
+                                <h3 class="text-center font-display-1">Helmi</h3>
                                 <div class="per-night text-center">
                                     <span class="font-display-2">Front Desk</span>
                                 </div>

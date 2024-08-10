@@ -27,7 +27,7 @@
                                     <li><a href=""  class="{{ Request::is('page*') ? 'active' : '' }}">Pages</a>
                                         <ul class="submenu">
                                             <li><a href="{{ route('general.page_rooms') }}" class="{{ Request::is('page/room') ? 'active' : '' }}">Rooms</a>
-                                            <li><a href="{{ route('general.page_element') }}" class="{{ Request::is('page/element') ? 'active' : '' }}">Element</a></li>
+                                            {{-- <li><a href="{{ route('general.page_element') }}" class="{{ Request::is('page/element') ? 'active' : '' }}">Element</a></li> --}}
                                         </ul>
                                     </li>
                                     <li><a href="{{ route('general.contact') }}"  class="{{ Request::is('contact*') ? 'active' : '' }}">Contact</a></li>
