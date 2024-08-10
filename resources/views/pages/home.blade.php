@@ -71,7 +71,7 @@
                         <div class="customer-caption">
                             <span>Tentang Nuansa Serpong</span>
                             <h2>Hotel Mewah dan Eksklusif</h2>
-                            <div class="caption-details">
+                            <div class="caption-details text-justify">
                                 <p>Dengan lokasi yang strategis di pusat kota dan pemandangan yang indah dari kamar-kamar kami, hotel kami adalah pilihan sempurna bagi mereka yang mencari akomodasi berkualitas tinggi dengan fasilitas yang lengkap.</p>
                                 <a href="#" class="btn more-btn1">Selengkapnya <i class="ti-angle-right"></i> </a>
                             </div>

@@ -36,19 +36,16 @@
                         <div class="customer-img mb-120">
                             <img src="{{ asset('assets/img/customer/customar1.png') }}" class="customar-img1" alt="">
                             <img src="{{ asset('assets/img/customer/customar2.png') }}" class="customar-img2" alt="">
-                            <div class="service-experience heartbeat">
-                                <h3>25 Years of Service<br>Experience</h3>
-                            </div>
+
                         </div>
                    </div>
                     <div class=" col-xl-4 col-lg-4">
                         <div class="customer-caption">
-                            <span>About our company</span>
-                            <h2>Make the customer the hero of your story</h2>
-                            <div class="caption-details">
-                                <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed do eiusmod tempor inc. </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
-                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                            {{-- <span>Tentang Nuansa Serpong</span> --}}
+                            <h2>Nuansa Serpong</h2>
+                            <div class="caption-details text-justify">
+                                <p>Dengan lokasi yang strategis di pusat kota dan pemandangan yang indah dari kamar-kamar kami, hotel kami adalah pilihan sempurna bagi mereka yang mencari akomodasi berkualitas tinggi dengan fasilitas yang lengkap. <br>
+                                Didukung dengan Team yang profesional di Bidangnya telah berpengalaman Lebih dari 10 tahun. Jangan ragu untuk menghubungi staf kami yang ramah dan profesional jika Anda membutuhkan bantuan dalam merencanakan kegiatan atau menjelajahi kota. Kami siap memberikan rekomendasi dan informasi yang diperlukan untuk membuat perjalanan Anda menjadi lebih baik.</p>
                             </div>
                         </div>
                     </div>
@@ -57,63 +54,114 @@
         </section>
         <!-- Make customer End-->
 
+        <!-- Room Start -->
+        <section class="room-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <!--font-back-tittle  -->
+                        <div class="font-back-tittle mb-45">
+                            <div class="archivment-front">
+                                <h3>Our Team</h3>
+                            </div>
+                            <h3 class="archivment-back">Our Team</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded ">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Fivi.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Fivi</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">General Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Paula.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Paula</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">General Affair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Veve.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Veve</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">Finance Controller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Erwin.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Erwin</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">Marketing Affairs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Mayang.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Mayang</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">Hotel Supervisor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 rounded">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img rounded">
+                               <a href="#"><img src="{{ asset('assets/img/ns/teams/Helmi.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3 class="text-center font-display-1"><a href="#">Helmi</a></h3>
+                                <div class="per-night text-center">
+                                    <span class="font-display-2">Front Desk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Gallery img Start-->
-        <div class="gallery-area g-padding fix">
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery-active owl-carousel">
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery3.jpg') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery img End-->
 
-        <!-- Dining Start -->
-        <div class="dining-area d-padding">
-            <!-- Single Left img -->
-            <div class="single-dining-area left-img">
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-8 col-md-8">
-                            <div class="dining-caption">
-                                <span>Our resturent</span>
-                                <h3>Dining & Drinks</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
             </div>
-            <!-- single Right img -->
-            <div class="single-dining-area right-img">
-                <div class="container">
-                    <div class="row justify-content-start">
-                        <div class="col-lg-8 col-md-8">
-                            <div class="dining-caption text-right">
-                                <span>Our Pool</span>
-                                <h3>Swimming Pool</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Dining End -->
+
+        </section>
+        <!-- Room End -->
 
         <!-- Testimonial Start -->
         <div class="testimonial-area t-padding">
