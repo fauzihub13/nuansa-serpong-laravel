@@ -122,6 +122,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <!-- Single Room -->
                         <div class="single-room mb-50">

@@ -30,6 +30,10 @@
     padding: 33px 20px 0px 30px !important;
 }
 
+.detail-room a {
+    color: #dca73a !important;
+}
+
 .text-primary-yellow {
     color: #dca73a !important;
 
@@ -38,6 +42,31 @@
 .detail-room li {
     /* float: left; */
     font-size: 14px;
+}
+
+.room-features {
+    font-family: "Lato", sans-serif ;
+}
+
+.room-features svg{
+    margin-right: 8px;
+}
+
+.text-grey {
+    color: #909092 !important;
+}
+
+.room-badge {
+    font-family: "Lato", sans-serif;
+}
+
+.room-badge svg {
+    margin-right: 8px;
+    color: #0EA706 !important;
+}
+
+.text-green {
+    color: #0EA706 !important;
 }
 
 @media (max-width: 767px) {
