@@ -29,6 +29,12 @@ class Room extends Model
         'bathrooms',
     ];
 
+    protected $casts = [
+        'cancellation' => 'boolean',
+        'pay_later' => 'boolean',
+        'smoking_policy' => 'boolean',
+    ];
+
     public function roomImages() : HasMany {
         return $this->hasMany(RoomImages::class);
     }

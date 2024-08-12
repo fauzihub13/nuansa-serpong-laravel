@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('policy')->nullable();
             $table->longText('room_features')->nullable();
             $table->integer('max_occupancy');
-            $table->integer('bed_configuration');
+            $table->string('bed_configuration');
             $table->integer('room_size');
             $table->integer('bathrooms');
             $table->longText('room_view')->nullable();

@@ -18,6 +18,10 @@ class RoomImages extends Model
 
     ];
 
+    // protected $casts = [
+    //     'image' => 'array',
+    // ];
+
     public function room() : BelongsTo {
         return $this->belongsTo(Room::class);
     }
