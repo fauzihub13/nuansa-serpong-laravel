@@ -8,9 +8,12 @@ use App\Models\Article;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\ImageColumn;
@@ -18,6 +21,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ArticleResource extends Resource
 {
@@ -37,11 +42,24 @@ class ArticleResource extends Resource
                     ->image()
                     ->required(),
                 TextInput::make('title')
-                    ->required(),
+                    ->required()
+                    ->afterStateUpdated(function (Set $set, ?string $state) {
+                        $slug = Str::slug($state);
+                        $original_slug = $slug;
+                        $count = 1;
+
+                        // Unique Slug
+                        while (DB::table('articles')->where('slug', $slug)->exists()) {
+                            $slug = $original_slug . '-' . $count++;
+                        };
+
+                        $set('slug', $slug);
+                    }),
                 Textarea::make('description')
                     ->required(),
                 DatePicker::make('date')
                     ->required(),
+                Hidden::make('slug'),
             ]);
     }
 
