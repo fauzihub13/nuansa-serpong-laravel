@@ -33,10 +33,8 @@ class ArticleResource extends Resource
                 FileUpload::make('image')
                     ->label('Article Images')
                     ->directory('article')
-                    ->disk('public')
                     ->image()
-                    ->required()
-                    ->visibility('public'),
+                    ->required(),
                 TextInput::make('title')
                     ->required(),
                 Textarea::make('description')
