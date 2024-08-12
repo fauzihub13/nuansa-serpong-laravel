@@ -33,6 +33,7 @@ class ArticleResource extends Resource
                 FileUpload::make('image')
                     ->label('Article Images')
                     ->directory('article')
+                    ->disk('public')
                     ->image()
                     ->required(),
                 TextInput::make('title')
@@ -49,7 +50,7 @@ class ArticleResource extends Resource
         return $table
             ->columns([
                 //
-                ImageColumn::make('image'),
+                ImageColumn::make('image')->disk('public'),
                 TextColumn::make('title')->searchable()->sortable(),
                 TextColumn::make('date')->searchable()->sortable(),
             ])
