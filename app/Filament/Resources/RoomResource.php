@@ -13,6 +13,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -34,10 +35,10 @@ class RoomResource extends Resource
                 FileUpload::make('image')
                     ->label('Room Images')
                     ->multiple()
-                    ->directory('room_images')
+                    ->directory('room')
                     ->disk('public')
-                    ->image()
-                    ->dehydrated(false),
+                    ->reorderable()
+                    ->image(),
                 TextInput::make('price')
                     ->required()
                     ->integer()
@@ -84,6 +85,7 @@ class RoomResource extends Resource
         return $table
             ->columns([
                 //
+                ImageColumn::make('image')->disk('public')->circular()->stacked()   ,
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('price')->searchable()->sortable(),
                 TextColumn::make('room_size')->searchable()->sortable(),
