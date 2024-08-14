@@ -9,6 +9,7 @@ use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Hidden;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -34,32 +35,35 @@ class ArticleResource extends Resource
     {
         return $form
             ->schema([
+                Section::make()->schema([
+                    FileUpload::make('image')
+                        ->label('Article Images')
+                        ->directory('article')
+                        ->disk('public')
+                        ->image()
+                        ->required(),
+                    TextInput::make('title')
+                        ->required()
+                        ->afterStateUpdated(function (Set $set, ?string $state) {
+                            $slug = Str::slug($state);
+                            $original_slug = $slug;
+                            $count = 1;
+
+                            // Unique Slug
+                            while (DB::table('articles')->where('slug', $slug)->exists()) {
+                                $slug = $original_slug . '-' . $count++;
+                            };
+
+                            $set('slug', $slug);
+                        }),
+                    Textarea::make('description')
+                        ->required(),
+                    DatePicker::make('date')
+                        ->required(),
+                    Hidden::make('slug'),
+                ]),
                 //
-                FileUpload::make('image')
-                    ->label('Article Images')
-                    ->directory('article')
-                    ->disk('public')
-                    ->image()
-                    ->required(),
-                TextInput::make('title')
-                    ->required()
-                    ->afterStateUpdated(function (Set $set, ?string $state) {
-                        $slug = Str::slug($state);
-                        $original_slug = $slug;
-                        $count = 1;
 
-                        // Unique Slug
-                        while (DB::table('articles')->where('slug', $slug)->exists()) {
-                            $slug = $original_slug . '-' . $count++;
-                        };
-
-                        $set('slug', $slug);
-                    }),
-                Textarea::make('description')
-                    ->required(),
-                DatePicker::make('date')
-                    ->required(),
-                Hidden::make('slug'),
             ]);
     }
 
@@ -68,7 +72,7 @@ class ArticleResource extends Resource
         return $table
             ->columns([
                 //
-                ImageColumn::make('image')->disk('public'),
+                ImageColumn::make('image')->disk('public')->circular(),
                 TextColumn::make('title')->searchable()->sortable(),
                 TextColumn::make('date')->searchable()->sortable(),
             ])
