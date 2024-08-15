@@ -32,92 +32,32 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="{{ asset('assets/img/blog/single_blog_1.png') }}" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
 
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>Google inks pact for new 35-storey office</h2>
-                                </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                </ul>
-                            </div>
-                        </article>
+                        @foreach ($articles as $article)
+                            <article class="blog_item">
+                                <div class="blog_item_img ">
+                                    <img class="card-img rounded-0 object-fit-cover thumbnail-blog" src="{{ asset('storage/'.$article->image) }}" alt="">
+                                    <a href="{{ route('general.blog_detail', $article->slug) }}" class="blog_item_date">
+                                        <h3>{{ $article->date_formatted->format('d') }}</h3>
+                                        <p>{{ $article->date_formatted->format('M') }}</p>
+                                    </a>
+                                </div>
 
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="{{ asset('assets/img/blog/single_blog_2.png') }}" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="{{ route('general.blog_detail', $article->slug) }}">
+                                        <h2>{{ $article->title }}</h2>
+                                    </a>
+                                    {{-- <p>{!! Str::limit($article->description, 5) !!}</p> --}}
+                                    <ul class="blog-info-link">
+                                        <li><a href="{{ route('general.blog_detail', $article->slug) }}"><i class="fa fa-user"></i> Nuansa Serpong</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        @endforeach
 
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="#">
-                                    <h2>Google inks pact for new 35-storey office</h2>
-                                </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                </ul>
-                            </div>
-                        </article>
 
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="{{ asset('assets/img/blog/single_blog_3.png') }}" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="#">
-                                    <h2>Google inks pact for new 35-storey office</h2>
-                                </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="{{ asset('assets/img/blog/single_blog_4.png') }}" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
-                                </a>
-                            </div>
-
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="#">
-                                    <h2>Google inks pact for new 35-storey office</h2>
-                                </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="blog_item">
-                            <div class="blog_item_img">
+                        {{-- <article class="blog_item">
+                            <div class="blog_item_img thumbnail-blog ">
                                 <img class="card-img rounded-0" src="{{ asset('assets/img/blog/single_blog_5.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
@@ -135,67 +75,28 @@
                                     <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                 </ul>
                             </div>
-                        </article>
+                        </article> --}}
 
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
-                            <form action="#">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder='Search Keyword'
-                                            onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Search Keyword'">
-                                        <div class="input-group-append">
-                                            <button class="btn" type="button"><i class="ti-search"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                    type="submit">Search</button>
-                            </form>
-                        </aside>
 
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Recent Post</h3>
-                            <div class="media post_item">
-                                <img src="{{ asset('assets/img/post/post_1.png') }}" alt="post">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h3>From life was you fish...</h3>
-                                    </a>
-                                    <p>January 12, 2019</p>
+                            @foreach ($articles as $article)
+                                <div class="media post_item ">
+                                    <img class="rounded image widget-little-image" src="{{ config('app.url') }}/storage/{{($article->image)}}" alt="post">
+                                    <div class="media-body">
+                                        <a href="{{ route('general.blog_detail', $article->slug) }}">
+                                            <h3>{{ $article->title }}</h3>
+                                        </a>
+                                        <p>{{ $article->date_formatted->format('d M Y')}}</p>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="{{ asset('assets/img/post/post_2.png') }}" alt="post">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h3>The Amazing Hubble</h3>
-                                    </a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="{{ asset('assets/img/post/post_3.png') }}" alt="post">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h3>Astronomy Or Astrology</h3>
-                                    </a>
-                                    <p>03 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="{{ asset('assets/img/post/post_4.png') }}" alt="post">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h3>Asteroids telescope</h3>
-                                    </a>
-                                    <p>01 Hours ago</p>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </aside>
 
                     </div>

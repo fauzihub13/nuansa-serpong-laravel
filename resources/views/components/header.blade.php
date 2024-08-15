@@ -19,12 +19,7 @@
                                     <li><a href="{{ route('general.rooms') }}"  class="{{ Request::is('page*') ? 'active' : '' }}">Rooms</a>
                                     <li><a href="{{ route('general.service') }}" class="{{ Request::is('service') ? 'active' : '' }}" >Service</a></li>
                                     <li><a href="{{ route('general.about') }}" class="{{ Request::is('about') ? 'active' : '' }}">About</a></li>
-                                    <li><a href="{{ route('general.blog') }}" class="{{ Request::is('blog*') ? 'active' : '' }}">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="{{ route('general.blog') }}" class="{{ Request::is('blog') ? 'active' : '' }}">Blog</a></li>
-                                            <li><a href="{{ route('general.blog_detail') }}" class="{{ Request::is('blog/detail') ? 'active' : '' }}">Blog Details</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{ route('general.blog') }}" class="{{ Request::is('blog*') ? 'active' : '' }}">Blog</a></li>
 
                                     </li>
                                     <li><a href="{{ route('general.contact') }}"  class="{{ Request::is('contact*') ? 'active' : '' }}">Contact</a></li>

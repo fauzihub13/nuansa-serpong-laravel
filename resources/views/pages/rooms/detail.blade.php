@@ -174,7 +174,7 @@
 
                     <div class="blog_right_sidebar col-lg-4">
                         <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title">Kamar Lainnya</h3>
+                            <h3 class="widget_title">Other Rooms</h3>
 
                             @foreach ($other_rooms as $other_room)
                                 <div class="media post_item ">

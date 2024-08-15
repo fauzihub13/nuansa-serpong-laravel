@@ -12,7 +12,7 @@ Route::controller(GeneralController::class)->group(function (){
     Route::get('about', 'about')->name('general.about');
     Route::get('service', 'service')->name('general.service');
     Route::get('blog', 'blog')->name('general.blog');
-    Route::get('blog/detail', 'blog_detail')->name('general.blog_detail');
+    Route::get('blog/detail/{slug}', 'blog_detail')->name('general.blog_detail');
     Route::get('rooms', 'rooms')->name('general.rooms');
     Route::get('rooms/detail/{slug}', 'detail_rooms')->name('general.detail_room');
     Route::get('page/element', 'page_element')->name('general.page_element');

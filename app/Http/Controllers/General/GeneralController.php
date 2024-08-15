@@ -5,6 +5,7 @@ namespace App\Http\Controllers\General;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Room;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use function PHPUnit\Framework\isEmpty;
@@ -42,12 +43,23 @@ class GeneralController extends Controller
 
     public function blog() {
         $articles = Article::all();
+        foreach ($articles as $article) {
+            $article->date_formatted = Carbon::parse($article->date);
+        }
+
 
         return view('pages.blog.index', compact('articles'));
     }
 
-    public function blog_detail() {
-        return view('pages.blog.detail');
+    public function blog_detail($slug) {
+        $article = Article::where('slug', $slug)->first();
+
+        $other_articles = Article::whereNot('slug',$slug )->get();
+
+        foreach ($other_articles as $other_article) {
+            $other_article->date_formatted = Carbon::parse($other_article->date);
+        }
+        return view('pages.blog.detail', compact('article', 'other_articles'));
     }
 
     public function rooms() {

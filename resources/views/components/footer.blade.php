@@ -16,10 +16,11 @@
                             <a href="#"><i class="fab fa-behance"></i></a>
                         </div>
                         <div class="footer-pera">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy; 2024</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank" style="text-color: #16161a; text-decoration: none; text-decoration-thickness: none;
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; 2024</script> All rights reserved | by <a href="https://colorlib.com" ` style="color: #212529; text-decoration: none; text-decoration-thickness: none;
     text-decoration-style: none;
-    text-decoration-color: #16161a">Colorlib</a>
+    text-decoration-color: #212529">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                         </div>
@@ -32,7 +33,7 @@
                             <ul>
                                 <li><a href="{{ route('general.about') }}">About Nuansa Serpong</a></li>
                                 <li><a href="{{ route('general.rooms') }}">Our Rooms</a></li>
-                                <li><a href="#">Our Photo Gallery</a></li>
+                                <li><a href="{{ route('general.blog') }}">Our Blogs</a></li>
                                 <li><a href="{{ route('general.service') }}">Our Service</a></li>
                             </ul>
                         </div>

@@ -9,6 +9,8 @@ use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Hidden;
+use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -57,8 +59,20 @@ class ArticleResource extends Resource
 
                             $set('slug', $slug);
                         }),
-                    Textarea::make('description')
-                        ->required(),
+                    // Textarea::make('description')
+                    //     ->required(),
+                    RichEditor::make('description')
+                        ->toolbarButtons([
+                            'blockquote',
+                            'bold',
+                            'bulletList',
+                            'italic',
+                            'link',
+                            'orderedList',
+                            'redo',
+                            'strike',
+                            'undo',
+                        ]),
                     DatePicker::make('date')
                         ->required(),
                     Hidden::make('slug'),
