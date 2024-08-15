@@ -9,11 +9,13 @@ use Filament\Forms;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\ImageColumn;
@@ -21,6 +23,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\DB;
+use Str;
 
 class RoomResource extends Resource
 {
@@ -34,7 +38,19 @@ class RoomResource extends Resource
             ->schema([
                 Section::make([
                     TextInput::make('name')
-                        ->required(),
+                        ->required()
+                        ->afterStateUpdated(function (Set $set, ?string $state) {
+                            $slug = Str::slug($state);
+                            $original_slug = $slug;
+                            $count = 1;
+
+                            // Unique Slug
+                            while (DB::table('rooms')->where('slug', $slug)->exists()) {
+                                $slug = $original_slug . '-' . $count++;
+                            };
+
+                            $set('slug', $slug);
+                        }),
                     TextInput::make('price')
                         ->required()
                         ->integer()
@@ -72,6 +88,7 @@ class RoomResource extends Resource
                         ->required()
                         ->onColor('success')
                         ->inline(false),
+                    Hidden::make('slug'),
                 ])->columns(2),
 
                 Section::make([
@@ -83,6 +100,7 @@ class RoomResource extends Resource
                         ->reorderable()
                         ->image()
                         ->panelLayout('grid')
+                        ->imageCropAspectRatio('4:3')
                         ->required(),
                 ]),
 

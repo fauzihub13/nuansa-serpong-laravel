@@ -42,90 +42,28 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
+
+
+                        @foreach ($rooms as $room)
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <!-- Single Room -->
+                                <div class="single-room mb-50">
+                                    <div class="room-img">
+                                        <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{ config('app.url') }}/storage/{{$room->first_image }}" alt=""></a>
+                                    </div>
+                                    <div class="room-caption">
+                                        <h3 class="font-title-card"><a href="{{ route('general.detail_room', $room->slug) }}">{{ $room->name }}</a></h3>
+                                        <div class="per-night">
+                                            <span>@currency($room->price) <span>/ per night</span></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/rooms/room3.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                                <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room4.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                                <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/rooms/room5.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/rooms/room6.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Classic Double Bed</a></h3>
-                                <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    
+
+
+
                 </div>
 
             </div>

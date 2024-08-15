@@ -69,8 +69,41 @@
     color: #0EA706 !important;
 }
 
+.room-detail {
+    height: 510px !important;
+}   
+
+.room-detail img {
+    object-fit: cover;
+}
+
+.widget-little-image {
+    height: 80px !important;
+    width: 80px !important;
+}
+
+.blog_right_sidebar .popular_post_widget .post_item img {
+    object-fit: cover;
+}
+
+.font-title-card {
+    font-size: 20px !important;
+}
+
 @media (max-width: 767px) {
     .font-display-2 {
         font-size: 16px !important;
+    }
+
+    .room-detail {
+        max-height: 280px !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+    .room-detail {
+        max-height: 460px !important;
     }
 }

@@ -41,6 +41,7 @@ class ArticleResource extends Resource
                         ->directory('article')
                         ->disk('public')
                         ->image()
+                        ->imageCropAspectRatio('4:3')
                         ->required(),
                     TextInput::make('title')
                         ->required()

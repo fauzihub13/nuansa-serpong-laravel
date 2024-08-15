@@ -98,7 +98,24 @@
                 </div>
                 <div class="row d-flex justify-content-center">
 
-                    <div class="col-xl-4 col-lg-6 col-md-6">
+                    @foreach ($rooms as $room)
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!-- Single Room -->
+                            <div class="single-room mb-50">
+                                <div class="room-img">
+                                    <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{ config('app.url') }}/storage/{{$room->first_image }}" alt=""></a>
+                                </div>
+                                <div class="room-caption">
+                                    <h3 class="font-title-card"><a href="{{ route('general.detail_room', $room->slug) }}">{{ $room->name }}</a></h3>
+                                    <div class="per-night">
+                                        <span>@currency($room->price) <span>/ per night</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                    {{-- <div class="col-xl-4 col-lg-6 col-md-6">
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
@@ -121,9 +138,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-xl-4 col-lg-6 col-md-6">
+                    </div> --}}
+
+                    {{-- <div class="col-xl-4 col-lg-6 col-md-6">
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
@@ -147,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
                 <div class="row justify-content-center">

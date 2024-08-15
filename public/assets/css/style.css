@@ -3208,6 +3208,7 @@ label {
 
 .single-room {
     height: 100% !important;
+
 }
 
 .single-room:hover .room-caption {
@@ -3221,10 +3222,17 @@ label {
 
 .single-room .room-img {
     overflow: hidden;
+    max-height: 250px;
+    /*
+    width: 330px; */
+
+
 }
 
 .single-room .room-img img {
     width: 100%;
+    object-fit: cover;
+    /* max-width: 220px; */
     /* height: 100%; */
     object-fit: cover;
     transform: rotate(0deg) scale(1);
