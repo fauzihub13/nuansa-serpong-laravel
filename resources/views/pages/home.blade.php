@@ -246,12 +246,12 @@
                             <!-- Single Blog -->
                             <div class="single-blog mb-30">
                                 <div class="blog-img">
-                                    <a href="#"><img src="{{ asset('storage/'.$article->image) }}" alt="{{ $article->title }}"></a>
+                                    <a href="{{ route('general.blog_detail', $article->slug) }}"><img src="{{ asset('storage/'.$article->image) }}" alt="{{ $article->title }}"></a>
                                 </div>
                                 <div class="blog-caption">
 
                                     <div class="blog-cap-mid">
-                                        <p class="font-title-card"><a href="#">{{ $article->title }}</a></p>
+                                        <p class="font-title-card"><a href="{{ route('general.blog_detail', $article->slug) }}">{{ $article->title }}</a></p>
                                     </div>
                                     <!-- Comments -->
                                     <div class="blog-cap-bottom d-flex justify-content-between">
