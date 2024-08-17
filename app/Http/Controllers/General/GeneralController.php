@@ -14,7 +14,7 @@ class GeneralController extends Controller
 {
     //
     public function home() {
-        $rooms = Room::limit(2)->get();
+        $rooms = Room::limit(3)->get();
 
         if(!$rooms->isEmpty()) {
             foreach ($rooms as $room) {
