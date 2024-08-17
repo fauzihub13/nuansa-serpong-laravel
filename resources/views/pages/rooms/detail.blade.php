@@ -178,7 +178,7 @@
 
                             @foreach ($other_rooms as $other_room)
                                 <div class="media post_item ">
-                                    <img class="rounded image widget-little-image" src="{{asset('storage/'.$room->first_image)}}" alt="post">
+                                    <img class="rounded image widget-little-image" src="{{asset('storage/'.$other_room->first_image)}}" alt="post">
                                     <div class="media-body">
                                         <a href="{{ route('general.detail_room', $other_room->slug) }}">
                                             <h3>{{ $other_room->name }}</h3>
