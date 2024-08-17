@@ -114,11 +114,10 @@
     }
 }
 
-@media (max-width: 992px) {
-
+@media (min-width: 992px) {
 
     .room-detail {
-        max-height: 460px !important;
+        height: 460px !important;
     }
 }
 
