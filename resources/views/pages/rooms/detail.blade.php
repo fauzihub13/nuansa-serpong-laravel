@@ -43,7 +43,7 @@
                                 <div class="carousel-inner">
                                     @foreach ($room->image as $image)
                                         <div class="carousel-item room-detail {{ $loop->first ? 'active' : '' }}">
-                                            <img class="d-block w-100" src="{{ config('app.url') }}/storage/{{$image }}" alt="Slide {{ ($loop->index)+1 }}">
+                                            <img class="d-block w-100" src="{{asset('storage/'.$image)}}" alt="Slide {{ ($loop->index)+1 }}">
                                         </div>
                                     @endforeach
                                 </div>
@@ -178,7 +178,7 @@
 
                             @foreach ($other_rooms as $other_room)
                                 <div class="media post_item ">
-                                    <img class="rounded image widget-little-image" src="{{ config('app.url') }}/storage/{{($other_room->first_image)}}" alt="post">
+                                    <img class="rounded image widget-little-image" src="{{asset('storage/'.$room->first_image)}}" alt="post">
                                     <div class="media-body">
                                         <a href="{{ route('general.detail_room', $other_room->slug) }}">
                                             <h3>{{ $other_room->name }}</h3>

@@ -59,7 +59,7 @@
 
                                 @foreach ($other_articles as $other_article)
                                     <div class="media post_item ">
-                                        <img class="rounded image widget-little-image" src="{{ config('app.url') }}/storage/{{($other_article->image)}}" alt="post">
+                                        <img class="rounded image widget-little-image" src="{{asset('storage/'.$other_article->image)}}" alt="post">
                                         <div class="media-body">
                                             <a href="{{ route('general.blog_detail', $other_article->slug) }}">
                                                 <h3>{{ $other_article->title }}</h3>

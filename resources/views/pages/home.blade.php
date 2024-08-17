@@ -103,7 +103,7 @@
                             <!-- Single Room -->
                             <div class="single-room mb-50">
                                 <div class="room-img">
-                                    <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{ config('app.url') }}/storage/{{$room->first_image }}" alt=""></a>
+                                    <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{asset('storage/'.$room->first_image)}}" alt="{{ $room->name }}"></a>
                                 </div>
                                 <div class="room-caption">
                                     <h3 class="font-title-card"><a href="{{ route('general.detail_room', $room->slug) }}">{{ $room->name }}</a></h3>
@@ -115,56 +115,7 @@
                         </div>
                     @endforeach
 
-                    {{-- <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"><img src="{{ asset('assets/img/ns/room/room-industrial-1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Room Skandinavian</a></h3>
-                                <div class="per-night">
-                                    <span><u>Rp,</u>363.000 <span>/ per night</span></span>
-                                    <hr>
-                                    <ul>
-                                        <li><p>- Luas 29m²</p></li>
-                                        <li><p>- Pool view​</p></li>
-                                        <li><p>- Non-smoking</p></li>
-                                        <li><p>- Swimming Pool​</p></li>
-                                        <li><p>- Air conditioned​</p></li>
-                                        <li><p>- Mini Fridge​​</p></li>
-                                        <li><p>- dan lainnya.</p></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
 
-                    {{-- <div class="col-xl-4 col-lg-6 col-md-6">
-                        <!-- Single Room -->
-                        <div class="single-room mb-50">
-                            <div class="room-img">
-                               <a href="{{ route('general.detail_room') }}"> <img src="{{ asset('assets/img/ns/room/room-skandinavian-1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="room-caption">
-                                <h3><a href="{{ route('general.detail_room') }}">Room Industrial​</a></h3>
-                                <div class="per-night">
-                                    <span><u>Rp,</u>363.000 <span>/ per night</span></span>
-                                    <hr>
-                                    <ul>
-                                        <li><p>- Luas 29m²</p></li>
-                                        <li><p>- Pool view​</p></li>
-                                        <li><p>- Non-smoking</p></li>
-                                        <li><p>- Swimming Pool​</p></li>
-                                        <li><p>- Air conditioned​</p></li>
-                                        <li><p>- Mini Fridge​​</p></li>
-                                        <li><p>- dan lainnya.</p></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
 
                 </div>
                 <div class="row justify-content-center">
@@ -355,26 +306,9 @@
         <!-- Blog End -->
 
         <!-- Gallery img Start-->
-        <div class="gallery-area fix">
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery-active owl-carousel">
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="{{ asset('assets/img/gallery/gallery3.jpg') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('components.gallery')
         <!-- Gallery img End-->
+
     </main>
 
 @endsection

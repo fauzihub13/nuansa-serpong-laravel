@@ -49,7 +49,7 @@
                                 <!-- Single Room -->
                                 <div class="single-room mb-50">
                                     <div class="room-img">
-                                        <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{ config('app.url') }}/storage/{{$room->first_image }}" alt=""></a>
+                                        <a href="{{ route('general.detail_room', $room->slug) }}"><img src="{{asset('storage/'.$room->first_image)}}" alt=""></a>
                                     </div>
                                     <div class="room-caption">
                                         <h3 class="font-title-card"><a href="{{ route('general.detail_room', $room->slug) }}">{{ $room->name }}</a></h3>
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    
+
 
 
 

@@ -86,7 +86,7 @@
                             <h3 class="widget_title">Recent Post</h3>
                             @foreach ($articles as $article)
                                 <div class="media post_item ">
-                                    <img class="rounded image widget-little-image" src="{{ config('app.url') }}/storage/{{($article->image)}}" alt="post">
+                                    <img class="rounded image widget-little-image" src="{{asset('storage/'.$article->image)}}" alt="post">
                                     <div class="media-body">
                                         <a href="{{ route('general.blog_detail', $article->slug) }}">
                                             <h3>{{ $article->title }}</h3>
