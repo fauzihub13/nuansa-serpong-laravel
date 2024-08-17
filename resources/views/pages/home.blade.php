@@ -239,67 +239,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <!-- Single Blog -->
-                        <div class="single-blog mb-30">
-                            <div class="blog-img">
-                                <a href="#"><img src="{{ asset('assets/img/our_blog/blog-img1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="blog-caption">
-                                <div class="blog-cap-top d-flex justify-content-between mb-40">
-                                    <span>news</span>
+                <div class="row d-flex justify-content-center">
+
+                    @foreach ($articles as  $article)
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <!-- Single Blog -->
+                            <div class="single-blog mb-30">
+                                <div class="blog-img">
+                                    <a href="#"><img src="{{ asset('storage/'.$article->image) }}" alt="{{ $article->title }}"></a>
                                 </div>
-                                <div class="blog-cap-mid">
-                                    <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
-                                </div>
-                                <!-- Comments -->
-                                <div class="blog-cap-bottom d-flex justify-content-between">
-                                    <span>Feb 28, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <!-- Single Blog -->
-                        <div class="single-blog mb-30">
-                            <div class="blog-img">
-                               <a href="#"> <img src="{{ asset('assets/img/our_blog/blog-img2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="blog-caption">
-                                <div class="blog-cap-top d-flex justify-content-between mb-40">
-                                    <span>news</span>
-                                </div>
-                                <div class="blog-cap-mid">
-                                    <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
-                                </div>
-                                <!-- Comments -->
-                                <div class="blog-cap-bottom d-flex justify-content-between">
-                                    <span>Feb 28, 2020</span>
+                                <div class="blog-caption">
+
+                                    <div class="blog-cap-mid">
+                                        <p class="font-title-card"><a href="#">{{ $article->title }}</a></p>
+                                    </div>
+                                    <!-- Comments -->
+                                    <div class="blog-cap-bottom d-flex justify-content-between">
+                                        <span>{{ $article->date_formatted->format('d M Y')}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <!-- Single Blog -->
-                        <div class="single-blog mb-30">
-                            <div class="blog-img">
-                                <a href="#"><img src="{{ asset('assets/img/our_blog/blog-img3.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="blog-caption">
-                                <div class="blog-cap-top d-flex justify-content-between mb-40">
-                                    <span>news</span>
-                                </div>
-                                <div class="blog-cap-mid">
-                                    <p><a href="#">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
-                                </div>
-                                <!-- Comments -->
-                                <div class="blog-cap-bottom d-flex justify-content-between">
-                                    <span>Feb 28, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
        </div>

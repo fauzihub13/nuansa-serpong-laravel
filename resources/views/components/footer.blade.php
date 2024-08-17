@@ -10,10 +10,10 @@
                         {{-- <a href="index.html"><h4>Nuansa Serpong</h4></a> --}}
                         </div>
                         <div class="footer-social footer-social2">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            {{-- <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a> --}}
                         </div>
                         <div class="footer-pera">
                         <p>
@@ -44,8 +44,8 @@
                         <div class="footer-tittle">
                             <h4>Reservations</h4>
                             <ul>
-                                <li><a href="#">Tel: +62 812 2000 9330</a></li>
-                                <li><a href="#">Instagram: Nuansaserpong</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=6281220009330&text=Hallo%2C%20saya%20ingin%20booking%20di%20Nuansa%20Serpong..">Tel: +62 812 2000 9330</a></li>
+                                <li><a href="https://www.instagram.com/nuansaserpong/">Instagram: Nuansaserpong</a></li>
                                 <li><a href="#">nuansaserpong@gmail.com</a></li>
                             </ul>
                         </div>
@@ -56,8 +56,8 @@
                         <div class="footer-tittle">
                             <h4>Our Location</h4>
                             <ul>
-                                <li><a href="#">Jl. Raya Legok - Karawaci No.89, Curug Sangereng, Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810</a></li>
-                                <li><a href="#"></a></li>
+                                <li><a href="https://maps.app.goo.gl/AJTDSDppx6qwQ95d6">Jl. Raya Legok - Karawaci No.89, Curug Sangereng, Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810</a></li>
+
                             </ul>
                             <!-- Form -->
 

@@ -29,8 +29,12 @@ class GeneralController extends Controller
             }
         }
 
-        // dd($room);
-        return view('pages.home', compact('rooms'));
+        $articles = Article::all();
+        foreach ($articles as $article) {
+            $article->date_formatted = Carbon::parse($article->date);
+        }
+
+        return view('pages.home', compact('rooms', 'articles'));
     }
 
     public function about() {
