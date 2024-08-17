@@ -28,7 +28,7 @@ class AdminPanelProvider extends PanelProvider
         // if (env('APP_ENV') === 'production') {
         //     URL::forceSchema('https');
         // }
-        URL::forceScheme(scheme: 'https');
+        // URL::forceScheme(scheme: 'https');
 
         return $panel
             ->default()
